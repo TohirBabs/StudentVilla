@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div className="mx-auto px-4 py-1">
         <div className="flex items-center justify-between ">
           <span className="text-xl text-gray-900 font-semibold">Villa</span>
-          <div className="flex space-x-4 text-gray-900">
+          <div className="flex space-x-3 text-gray-900 items-center">
             <Button
               style={{ textTransform: "lowercase", borderRadius: "2rem" }}
               variant="contained"
@@ -17,7 +17,7 @@ export const Navbar = () => {
             >
               Sign in
             </Button>
-            <IconContext.Provider value={{ className: "", size: "2em" }}>
+            <IconContext.Provider value={{ className: "", size: "1.5em" }}>
               <div>
                 <MdSegment />
               </div>
