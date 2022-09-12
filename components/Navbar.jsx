@@ -1,16 +1,32 @@
 import React from "react";
+import { MdSegment } from "react-icons/md";
+import { IconContext } from "react-icons";
+import { Button } from "@mui/material";
 
 export const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-10 w-100vw bg-white text-black backdrop-filter backdrop-blur-lg bg-opacity-70">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <span className="text-2xl text-gray-900 font-semibold">My Logo</span>
+    <nav className="sticky top-2 rounded-2xl sm:max-w-5xl max-w-[96vw] z-10 mx-auto bg-white text-black backdrop-filter backdrop-blur-lg bg-opacity-70">
+      <div className="mx-auto px-4 py-2">
+        <div className="flex items-center justify-between ">
+          <span className="text-xl text-gray-900 font-semibold">Villa</span>
           <div className="flex space-x-4 text-gray-900">
-            <a href="#">Dashboard</a>
+            <Button
+              style={{ textTransform: "lowercase", borderRadius: "2rem" }}
+              variant="contained"
+              href="#contained-buttons"
+            >
+              Sign in
+            </Button>
+            <IconContext.Provider value={{ className: "", size: "2em" }}>
+              <div>
+                <MdSegment />
+              </div>
+            </IconContext.Provider>
+
+            {/* <a href="#">Dashboard</a>
             <a href="#">About</a>
             <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#">Contact</a> */}
           </div>
         </div>
       </div>
