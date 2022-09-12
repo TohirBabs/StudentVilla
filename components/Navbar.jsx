@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 export const Navbar = () => {
   return (
     <nav className="sticky top-1 rounded-2xl sm:max-w-5xl max-w-[96vw] z-10 mx-auto bg-white backdrop-filter backdrop-blur-lg bg-opacity-50">
-      <div className="mx-auto px-4 py-1">
+      <div className="mx-auto px-4 py-2">
         <div className="flex items-center justify-between ">
           <span className="text-xl text-blue-800 font-semibold">Villa</span>
           <div className="flex space-x-4 text-gray-900 items-center">
