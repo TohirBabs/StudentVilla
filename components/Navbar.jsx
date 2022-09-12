@@ -5,19 +5,21 @@ import { Button } from "@mui/material";
 
 export const Navbar = () => {
   return (
-    <nav className="sticky top-1 rounded-full sm:max-w-5xl max-w-[96vw] z-10 mx-auto bg-white text-black backdrop-filter backdrop-blur-lg bg-opacity-50">
+    <nav className="sticky top-1 rounded-2xl sm:max-w-5xl max-w-[96vw] z-10 mx-auto bg-white backdrop-filter backdrop-blur-lg bg-opacity-50">
       <div className="mx-auto px-4 py-1">
         <div className="flex items-center justify-between ">
-          <span className="text-xl text-gray-900 font-semibold">Villa</span>
-          <div className="flex space-x-3 text-gray-900 items-center">
+          <span className="text-xl text-blue-600 font-semibold">Villa</span>
+          <div className="flex space-x-4 text-gray-900 items-center">
             <Button
-              style={{ textTransform: "lowercase", borderRadius: "2rem" }}
+              style={{ textTransform: "lowercase", borderRadius: "1rem" }}
               variant="contained"
               href="#contained-buttons"
             >
               Sign in
             </Button>
-            <IconContext.Provider value={{ className: "", size: "1.5em" }}>
+            <IconContext.Provider
+              value={{ className: "text-white", size: "1.5em" }}
+            >
               <div>
                 <MdSegment />
               </div>
