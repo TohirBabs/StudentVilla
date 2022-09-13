@@ -14,9 +14,7 @@ export const Banner = () => {
         <p className="text-center ">
           The fastest resume generator for students by students
         </p>
-        <div className="my-6 ">
-          <CarouselSlide />
-        </div>
+        <CarouselSlide />
         <Button
           style={{
             borderRadius: "1rem",

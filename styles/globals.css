@@ -27,13 +27,13 @@ a {
   }
   body {
     color: white;
-    /* background: rgb(6, 12, 29); */
-    background: linear-gradient(
+    background: #153a84;
+    /* background: linear-gradient(
       126deg,
       rgba(6, 12, 29, 1) 0%,
-      #07174b 50%,
-      rgba(8, 53, 82, 1) 100%
-    );
+      #0a216e 50%,
+      rgb(14, 85, 133) 100%
+    ); */
   }
 }
 slick-track {
