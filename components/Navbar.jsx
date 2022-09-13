@@ -11,11 +11,15 @@ export const Navbar = () => {
           <span className="text-xl text-blue-800 font-semibold">Villa</span>
           <div className="flex space-x-4 text-gray-900 items-center">
             <Button
-              style={{ textTransform: "lowercase", borderRadius: "1rem" }}
+              style={{
+                textTransform: "lowercase",
+                borderRadius: "1rem",
+                fontFamily: "monospace",
+              }}
               variant="contained"
               href="#contained-buttons"
             >
-              Sign in
+              Sign up
             </Button>
             <IconContext.Provider
               value={{ className: "text-white", size: "1.5em" }}
