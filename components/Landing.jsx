@@ -4,7 +4,7 @@ import { Navbar } from "./Navbar";
 
 export const Landing = () => {
   return (
-    <div className="max-h-screen">
+    <div className="h-screen">
       <Navbar />
       <Banner />
     </div>

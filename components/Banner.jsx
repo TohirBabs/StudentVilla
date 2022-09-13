@@ -7,22 +7,20 @@ import { CarouselSlide } from "./Carousel";
 export const Banner = () => {
   return (
     <div className=" ">
-      <main className="mt-10 max-w-5xl mx-auto p-4 text-center">
+      <main className="mt-8 max-w-5xl mx-auto p-4 text-center">
         <h1 className="text-center text-3xl ">
           Create your resume with <span className="text-blue-600">Villa</span>
         </h1>
         <p className="text-center ">
           The fastest resume generator for students by students
         </p>
-        <div className="my-10 ">
+        <div className="my-6 ">
           <CarouselSlide />
         </div>
         <Button
           style={{
             borderRadius: "1rem",
             fontFamily: "monospace",
-            position: "relative",
-            top: "2rem",
           }}
           variant="contained"
           href="#contained-buttons"
