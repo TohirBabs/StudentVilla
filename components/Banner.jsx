@@ -20,7 +20,7 @@ export const Banner = () => {
         <Button
           style={{
             borderRadius: "1rem",
-            fontFamily: "monospace",
+            fontFamily: "DM Sans",
           }}
           variant="contained"
           href="#contained-buttons"
