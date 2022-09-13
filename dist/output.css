@@ -625,10 +625,6 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -737,7 +733,7 @@ a {
     background: linear-gradient(
       126deg,
       rgba(6, 12, 29, 1) 0%,
-      rgba(7, 23, 75, 1) 50%,
+      #07174b 50%,
       rgba(8, 53, 82, 1) 100%
     );
   }
