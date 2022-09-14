@@ -16,32 +16,46 @@ export const CarouselSlide = () => {
   const images = [
     {
       id: 1,
-      src: "/home/portfolio.png",
+      src: "/home/red.png",
       alt: "Image 1",
-      text: "pick a template",
+      text: "1.    pick a template",
     },
     {
       id: 2,
-      src: "/home/resume.png",
+      src: "/home/gas.png",
       alt: "Image 2 ",
-      text: "make your resume",
+      text: "2.    make your resume",
     },
     {
       id: 3,
-      src: "/home/portfolio.png",
+      src: "/home/taxi.png",
       alt: "Image 3",
-      text: "customize the design",
+      text: "3. customize the design",
+    },
+    {
+      id: 4,
+      src: "/home/bike.png",
+      alt: "Image 4",
+      text: "Download in pdf or doc",
     },
   ];
 
   function Item(props) {
     return (
-      <div
-        key={props.item.id}
-        className="w-[80vw] mx-auto rounded-3xl pb-3  bg-gray-800 border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-30"
-      >
-        <img src={props.item.src} alt={props.item.alt} />
-        <h2 className="text-4xl text-blue-500 px-12">{props.item.text}</h2>
+      <div className="relative overflow-hidden w-[90vw] h-[50vh]">
+        <img
+          src={props.item.src}
+          alt={props.item.alt}
+          className="absolute -z-1 w-[150vw]"
+        />
+        <div
+          key={props.item.id}
+          className="h-[50vh] flex items-center mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
+        >
+          <h2 className="text-6xl sec-font text-left text-blue-400 px-12 my-auto">
+            {props.item.text}
+          </h2>
+        </div>
       </div>
     );
   }

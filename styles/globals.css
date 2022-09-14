@@ -8,13 +8,17 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Cousine", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  font-family: "lobster", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .logo {
+  /* font-family: "Cousine"; */
+  font-family: "lobster";
+}
+
+.sec-font {
   font-family: "Pacifico";
-  /* font-family: "lobster"; */
 }
 
 a {
