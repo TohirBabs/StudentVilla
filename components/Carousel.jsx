@@ -3,38 +3,28 @@ import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
 
 export const CarouselSlide = () => {
-  var items = [
-    {
-      name: "Random Name #1",
-      description: "Probably the most random thing you have ever seen!",
-    },
-    {
-      name: "Random Name #2",
-      description: "Hello World!",
-    },
-  ];
   const images = [
     {
       id: 1,
-      src: "/home/red.png",
+      src: "/home/pick-resume.png",
       alt: "Image 1",
-      text: "1.    pick a template",
+      text: "1. pick a template",
     },
     {
       id: 2,
-      src: "/home/gas.png",
+      src: "/home/make-resume.png",
       alt: "Image 2 ",
       text: "2.    make your resume",
     },
     {
       id: 3,
-      src: "/home/taxi.png",
+      src: "/home/customize.png",
       alt: "Image 3",
       text: "3. customize the design",
     },
     {
       id: 4,
-      src: "/home/bike.png",
+      src: "/home/download.png",
       alt: "Image 4",
       text: "Download in pdf or doc",
     },
@@ -46,13 +36,13 @@ export const CarouselSlide = () => {
         <img
           src={props.item.src}
           alt={props.item.alt}
-          className="absolute -z-1 w-[150vw]"
+          className="absolute -z-1 w-screen"
         />
         <div
           key={props.item.id}
-          className="h-[50vh] flex items-center mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
+          className="h-[50vh] flex items-center mx-auto rounded-3xl pb-3 relative  bg-white  backdrop-filter backdrop-blur-sm bg-opacity-5"
         >
-          <h2 className="text-6xl sec-font text-left text-blue-400 px-12 my-auto">
+          <h2 className="text-6xl sec-font text-left text-blue-900 px-12 my-auto">
             {props.item.text}
           </h2>
         </div>
