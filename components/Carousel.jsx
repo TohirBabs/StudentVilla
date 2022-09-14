@@ -38,7 +38,7 @@ export const CarouselSlide = () => {
     return (
       <div
         key={props.item.id}
-        className="w-[80vw] mx-auto rounded-3xl pb-3  bg-gray-800 backdrop-filter backdrop-blur-lg bg-opacity-30"
+        className="w-[80vw] mx-auto rounded-3xl pb-3  bg-gray-800 border border-gray-500 backdrop-filter backdrop-blur-lg bg-opacity-30"
       >
         <img src={props.item.src} alt={props.item.alt} />
         <h2 className="text-4xl text-blue-500 px-12">{props.item.text}</h2>
