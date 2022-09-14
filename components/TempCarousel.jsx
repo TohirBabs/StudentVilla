@@ -19,19 +19,19 @@ export const TempCarousel = () => {
       id: 1,
       src: "/home/template1.png",
       alt: "Image 1",
-      text: "1.    pick a template",
+      text: "Plain",
     },
     {
       id: 2,
       src: "/home/template2.png",
       alt: "Image 2 ",
-      text: "2.    make your resume",
+      text: "Colored",
     },
     {
       id: 3,
       src: "/home/template3.png",
       alt: "Image 3",
-      text: "3. customize the design",
+      text: "Spaced",
     },
   ];
 
@@ -41,7 +41,7 @@ export const TempCarousel = () => {
         key={props.item.id}
         className="mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
       >
-        <h2 className=" sec-font text-center text-blue-400  py-4">
+        <h2 className=" sec-font text-center text-2xl text-blue-400  py-4">
           {props.item.text}
         </h2>
         <img src={props.item.src} alt={props.item.alt} className="mx-auto" />

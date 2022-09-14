@@ -32,20 +32,14 @@ export const CarouselSlide = () => {
 
   function Item(props) {
     return (
-      <div className="relative overflow-hidden w-[90vw] h-[50vh]">
-        <img
-          src={props.item.src}
-          alt={props.item.alt}
-          className="absolute -z-1 w-screen"
-        />
-        <div
-          key={props.item.id}
-          className="h-[50vh] flex items-center mx-auto rounded-3xl pb-3 relative  bg-white  backdrop-filter backdrop-blur-sm bg-opacity-5"
-        >
-          <h2 className="text-6xl sec-font text-left text-blue-900 px-12 my-auto">
-            {props.item.text}
-          </h2>
-        </div>
+      <div
+        key={props.item.id}
+        className="mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
+      >
+        <h2 className=" sec-font text-center text-3xl  py-4">
+          {props.item.text}
+        </h2>
+        <img src={props.item.src} alt={props.item.alt} className="mx-auto" />
       </div>
     );
   }
