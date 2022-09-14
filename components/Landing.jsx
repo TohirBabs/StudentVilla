@@ -4,7 +4,7 @@ import { Navbar } from "./Navbar";
 
 export const Landing = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col justify-center">
       <Navbar />
       <Banner />
     </div>

@@ -6,10 +6,11 @@ import { CarouselSlide } from "./Carousel";
 
 export const Banner = () => {
   return (
-    <div className=" ">
-      <main className="mt-2 max-w-5xl mx-auto p-4 text-center">
-        <h1 className="text-center text-3xl ">
-          Create your resume with <span className="text-blue-600">Villa</span>
+    <div className="flex-1 flex flex-col">
+      <main className="my-auto max-w-5xl  p-4 text-center">
+        <h1 className="text-center text-2xl ">
+          Create your resume with{" "}
+          <span className="text-blue-600 logo">Villa</span>
         </h1>
 
         <CarouselSlide />
