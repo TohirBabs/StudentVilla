@@ -7,13 +7,11 @@ import { CarouselSlide } from "./Carousel";
 export const Banner = () => {
   return (
     <div className=" ">
-      <main className="mt-8 max-w-5xl mx-auto p-4 text-center">
+      <main className="mt-2 max-w-5xl mx-auto p-4 text-center">
         <h1 className="text-center text-3xl ">
           Create your resume with <span className="text-blue-600">Villa</span>
         </h1>
-        <p className="text-center ">
-          The fastest resume generator for students by students
-        </p>
+
         <CarouselSlide />
         <Button
           style={{
