@@ -35,12 +35,7 @@ export const CarouselSlide = () => {
     return (
       <div
         key={props.item.id}
-        className="w-[80vw] mx-auto"
-        style={{
-          borderRadius: "30px",
-          background: "linear-gradient(225deg, #133477, #163e8d)",
-          boxShadow: "-6px 6px 16px #081735,6px -6px 16px #225dd3",
-        }}
+        className="w-[80vw] mx-auto rounded-2xl  bg-black backdrop-filter backdrop-blur-lg bg-opacity-50"
       >
         <img src={props.item.src} alt={props.item.alt} />
       </div>

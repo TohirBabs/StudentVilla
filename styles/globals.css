@@ -27,13 +27,13 @@ a {
   }
   body {
     color: white;
-    background: #153a84;
-    /* background: linear-gradient(
-      126deg,
-      rgba(6, 12, 29, 1) 0%,
-      #0a216e 50%,
-      rgb(14, 85, 133) 100%
-    ); */
+    /* background: #153a84; */
+    background: linear-gradient(
+      145deg,
+      rgb(0, 0, 0) 0%,
+      rgb(1, 7, 32) 50%,
+      #000000 100%
+    );
   }
 }
 slick-track {
@@ -49,3 +49,7 @@ slick-track {
   width: 50%;
   height: 50%;
 }
+
+/* * {
+  border: 1px red solid;
+} */
