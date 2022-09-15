@@ -86,7 +86,7 @@ slick-track {
 }
 
 .shape:last-child {
-  background: linear-gradient(to right, #ff512f, #f09819);
+  background: linear-gradient(to right, #ff512f, #f0900a);
   left: -30px;
   bottom: -10px;
 }
