@@ -2,16 +2,82 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
+import { Autocomplete, TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-
+import { country_list } from "./Countries";
 const steps = [
   {
     label: "Contact Info",
-    description: <div>ade</div>,
+    description: (
+      <>
+        <TextField
+          label="Full Name"
+          required
+          size="small"
+          margin="normal"
+          focused
+          inputProps={{ style: { color: "white", fontFamily: "DM Sans" } }}
+          sx={{
+            color: "white",
+            fontFamily: "lobster",
+          }}
+          fullWidth
+        />
+        <TextField
+          label="Email"
+          required
+          size="small"
+          margin="normal"
+          focused
+          inputProps={{ style: { color: "white", fontFamily: "DM Sans" } }}
+          sx={{
+            color: "white",
+            fontFamily: "lobster",
+          }}
+        />
+        <TextField
+          label="Phone No"
+          required
+          size="small"
+          margin="normal"
+          focused
+          inputProps={{ style: { color: "white", fontFamily: "DM Sans" } }}
+          sx={{
+            color: "white",
+            fontFamily: "lobster",
+          }}
+        />
+
+        <Autocomplete
+          label="Country"
+          size="small"
+          options={country_list}
+          renderInput={(params) => (
+            <TextField
+              focussed
+              margin="normal"
+              focused
+              {...params}
+              label="Country"
+              inputProps={{ style: { color: "white", fontFamily: "DM Sans" } }}
+            />
+          )}
+        />
+        <TextField
+          label="City"
+          size="small"
+          margin="normal"
+          focused
+          inputProps={{ style: { color: "white", fontFamily: "DM Sans" } }}
+          sx={{
+            color: "white",
+            fontFamily: "lobster",
+          }}
+        />
+      </>
+    ),
   },
   {
     label: "Career Objective",
@@ -62,16 +128,17 @@ export default function TextMobileStepper() {
   };
 
   return (
-    <div className="w-[90vw] rounded-2xl mx-auto overflow-hidden mt-8 bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 ">
+    <div className="w-[90vw] rounded-3xl mx-auto overflow-hidden mt-8 bg-white backdrop-filter backdrop-blur-sm bg-opacity-5">
       <div className="p-4 bg-blue-600">
         <p className="sec-font text-xl">{steps[activeStep].label}</p>
       </div>
       <Box
         sx={{
-          height: 255,
+          maxHeight: 400,
           maxWidth: 400,
           width: "100%",
-          p: 2,
+          overflowY: "scroll",
+          p: 3,
           background: "inherit",
         }}
       >
@@ -91,6 +158,7 @@ export default function TextMobileStepper() {
         nextButton={
           <Button
             size="small"
+            margin="normal"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
@@ -103,7 +171,12 @@ export default function TextMobileStepper() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            size="small"
+            margin="normal"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
