@@ -50,7 +50,7 @@ export const CarouselSlide = () => {
     //     className="sm:max-w-[80vw] w-[200vw] left-[10vw] "
     //   />
     //   </div>
-    <Carousel animation="slide" className="my-3 py-6">
+    <Carousel animation="slide" className="my-3">
       {images.map((item, i) => (
         <Item key={i} item={item} />
       ))}
