@@ -39,13 +39,13 @@ export const TempCarousel = () => {
     return (
       <div
         key={props.item.id}
-        className="mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
+        className="mx-auto rounded-3xl pb-3 relative  bg-white  backdrop-filter backdrop-blur-sm bg-opacity-20"
       >
         <h2 className=" sec-font text-center text-2xl text-blue-400  py-4">
           {props.item.text}
         </h2>
         <img src={props.item.src} alt={props.item.alt} className="mx-auto" />
-        <Link href="/templates">
+        <Link href="/form">
           <Button
             style={{
               textTransform: "lowercase",
@@ -68,7 +68,7 @@ export const TempCarousel = () => {
     //     className="sm:max-w-[80vw] w-[200vw] left-[10vw] "
     //   />
     //   </div>
-    <Carousel animation="slide" className="my-3 py-6">
+    <Carousel animation="slide" className="my-3 ">
       {images.map((item, i) => (
         <Item key={i} item={item} />
       ))}

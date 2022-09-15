@@ -34,7 +34,7 @@ export const CarouselSlide = () => {
     return (
       <div
         key={props.item.id}
-        className="mx-auto rounded-3xl pb-3 relative  bg-blue-500  backdrop-filter backdrop-blur-sm bg-opacity-10"
+        className="mx-auto rounded-3xl pb-3 px-4 relative  bg-opacity-20 bg-white"
       >
         <h2 className=" sec-font text-center text-3xl  py-4">
           {props.item.text}
