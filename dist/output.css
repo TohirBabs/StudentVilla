@@ -668,6 +668,11 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -843,7 +848,7 @@ slick-track {
 .shape:last-child {
   background: linear-gradient(to right, #ff512f, #f0900a);
   left: -30px;
-  bottom: -10px;
+  bottom: 140px;
 }
 
 @media (min-width: 640px) {

@@ -11,9 +11,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 const steps = [
   {
     label: "Contact Info",
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
+    description: <div>ade</div>,
   },
   {
     label: "Career Objective",
@@ -65,7 +63,7 @@ export default function TextMobileStepper() {
 
   return (
     <div className="w-[90vw] rounded-2xl mx-auto overflow-hidden mt-8 bg-white backdrop-filter backdrop-blur-sm bg-opacity-10 ">
-      <div className="p-4 bg-blue-500">
+      <div className="p-4 bg-blue-600">
         <p className="sec-font text-xl">{steps[activeStep].label}</p>
       </div>
       <Box
@@ -81,7 +79,7 @@ export default function TextMobileStepper() {
       </Box>
       <MobileStepper
         variant="progress"
-        steps={6}
+        steps={maxSteps}
         position="static"
         activeStep={activeStep}
         sx={{
@@ -91,7 +89,11 @@ export default function TextMobileStepper() {
           // backdropFilter: "blur(20px)",
         }}
         nextButton={
-          <Button size="small" onClick={handleNext} disabled={activeStep === 5}>
+          <Button
+            size="small"
+            onClick={handleNext}
+            disabled={activeStep === maxSteps - 1}
+          >
             Next
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
